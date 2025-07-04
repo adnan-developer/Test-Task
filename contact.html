@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-black text-white">
+    <nav class="flex items-center justify-between">
+      <div class="logo-container">
+        <a href="/"><img class="w-24" src="./logo.jpg" alt="" /></a>
+      </div>
+      <div class="links flex gap-4 items-center p-4">
+        <a href="/" class="hover:text-gray-300">Home</a>
+        <a href="join.html" class="hover:text-gray-300">Join VIP</a>
+        <a href="contact.html" class="hover:text-gray-300">Contact</a>
+      </div>
+    </nav>
+    <hr class="bg-white h-[1px]" />
+    <section class="mt-4 flex flex-col items-center justify-center">
+      <h1 class="text-4xl font-bold">Contact Us</h1>
+      <p class="mt-4 text-center">
+        Email:
+        <a href="mailto:info@dxbagentnetwork.com">info@dxbagentnetwork.com</a>
+      </p>
+
+      <form class="mt-4 flex flex-col items-center justify-center gap-4 p-4">
+        <input
+          type="text"
+          placeholder="Full Name"
+          class="bg-transparent border border-white w-96 max-md:w-70 p-2 rounded-md"
+          required
+        />
+        <input
+          type="text"
+          placeholder="Whatsapp Number"
+          class="bg-transparent border border-white w-96 max-md:w-70 p-2 rounded-md"
+          required
+        />
+        <select
+          class="border border-white w-96 max-md:w-70 p-2 rounded-md focus:outline-none focus:ring-1 focus:ring-[#D4AF37] bg-[#111] text-white"
+          required
+        >
+          <option selected disabled>Agent Type</option>
+          <option>Sales</option>
+          <option>Rental</option>
+          <option>Off-Plan</option>
+          <option>Other</option>
+        </select>
+        <input
+          type="text"
+          placeholder="Location + Budget (if buyer)"
+          class="bg-transparent border border-white w-96 max-md:w-70 p-2 rounded-md"
+        />
+        <textarea
+          placeholder="Notes"
+          rows="4"
+          class="w-96 max-md:w-70 p-2 border border-white rounded-md"
+        ></textarea>
+        <button
+          type="submit"
+          class="w-96 max-md:w-70 mb-16 p-2 px-8 text-black cursor-pointer transition-all bg-[#D4AF37] hover:bg-yellow-600 rounded-md"
+        >
+          Submit
+        </button>
+      </form>
+    </section>
+    <a
+      href="https://wa.me/971000000000"
+      target="_blank"
+      class="fixed bottom-4 right-4 bg-green-500 text-white w-12 h-12 flex items-center justify-center rounded-full shadow-lg hover:bg-green-600 z-50"
+    >
+      <h3 class="text-3xl"><i class="ri-whatsapp-line"></i></h3
+    ></a>
+  </body>
+</html>
